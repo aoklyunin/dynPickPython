@@ -18,7 +18,7 @@ class Frame(wx.Frame):
         forces = self.dp.readForces(True)
         for i in range(6):
             self.textes[i].Clear()
-            self.textes[i].AppendText("%.2f"%forces[0])
+            self.textes[i].AppendText("%.2f"%forces[i])
 
     # конструктор
     def __init__(self, parent=None, id=-1, title='', pos=(0, 0), size=(480,70)):
